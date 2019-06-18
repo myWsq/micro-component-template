@@ -151,7 +151,7 @@ export default Vue.extend({
   & /deep/ {
     color: #303133;
     line-height: 1.5;
-    h1 {
+    h1, a {
       color: #42b983;
     }
     blockquote {
@@ -163,6 +163,9 @@ export default Vue.extend({
     }
     h2 {
       font-weight: 400;
+    }
+    a {
+      text-decoration: none;
     }
   }
 }

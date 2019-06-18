@@ -1,6 +1,9 @@
-# Micro Component Templete 微组件模板
+# Micro Component Template 微组件模板
 
-> 使用此模板为微门户 (Micro Portal) 开发组件
+[![star this repo](http://githubbadges.com/star.svg?user=myWsq&repo=micro-component-template&style=default)](https://github.com/myWsq/micro-component-template)
+[![fork this repo](http://githubbadges.com/fork.svg?user=myWsq&repo=micro-component-template&style=default)](https://github.com/myWsq/micro-component-template/fork)
+
+> Fork本项目, 更新依赖与你的[微门户模板](https://github.com/myWsq/micro-portal-template)相同, 再使用新模板为微门户开发组件
 
 ## 基本思路
 
@@ -62,11 +65,8 @@ Playground中同样注入了`vue-router`, 需要注意的是, 开发阶段的路
 
 ### 依赖
 
-通用第三方依赖版本应与微门户使用的依赖版本相同, 使用新特性时, 需要查阅微门户依赖版本. 
+通用第三方依赖版本应与微门户使用的依赖版本相同, 使用新特性时, 需要查阅微门户依赖版本. 为了保持开发顺畅, 组件开发模板也应注入相同依赖.
 
-## 最佳实践
-
-fork本项目, 修改依赖与门户项目相同, 再使用自己的模板构建项目.
 
 ### 布局组件
 
