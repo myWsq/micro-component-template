@@ -16,7 +16,7 @@ $ git clone https://github.com/myWsq/micro-component-templete.git
 $ cd micro-component-templete
 $ yarn # or npm install
 ```
-开发前, 首先要明确当前项目的`namespace`, 一般情况下就是`package.json`的`name`字段. 根据当前的项目进行修改.
+开发前, 首先要明确当前项目的`namespace`, 一般情况下就是`package.json`的`name`字段. 根据当前的项目进行修改.
 
 ```json
 // package.json
@@ -26,7 +26,7 @@ $ yarn # or npm install
 }
 ```
 
-一个项目可以编译出多个相互独立的微组件, 在`src/components`文件夹下新建组件并在`index.ts`中导出.
+一个项目可以编译出多个相互独立的微组件, 在`src/components`文件夹下新建组件并在`index.ts`中导出.
 
 ### Play
 
@@ -41,7 +41,7 @@ $ yarn serve
 ```shell
 $ yarn build
 ```
-微门户会根据配置引入组件的脚本与样式文件. `{namespace}.{componentMame}` 即为组件的内存地址(path)
+微门户会根据配置引入组件的脚本与样式文件. `{namespace}.{componentMame}` 即为组件的内存地址(path)
 
 注意: 为了及时更新组件缓存与控制组件版本, 编译出的UMD模块文件名应含有版本号.
 
@@ -49,7 +49,7 @@ $ yarn build
 $ yarn build --filename foo@0.0.1
 ```
 
-此方法为组件回滚机制提供了有效途径.
+此方法为组件回滚机制提供了有效途径.
 
 ### Deploy
 
@@ -57,7 +57,7 @@ $ yarn build --filename foo@0.0.1
 
 ## Tip
 
-微组件是独立开发, 独立编译, 独立部署的, 但是由于组件将嵌套在微门户内, 需要约定一些特性.
+微组件是独立开发, 独立编译, 独立部署的, 但是由于组件将嵌套在微门户内, 需要约定一些特性.
 
 ### Router
 
@@ -70,7 +70,7 @@ Playground中同样注入了`vue-router`, 需要注意的是, 开发阶段的路
 
 ### 布局组件
 
-门户项目不会渲染任何元素, 项目的布局由布局组件决定. 门户项目使用布局组件的默认slot插入页面组件. 修改布局组件时要注意: **如果出现异常情况会导致整个项目无法正常显示**.
+门户项目不会渲染任何元素, 项目的布局由布局组件决定. 门户项目使用布局组件的默认slot插入页面组件. 修改布局组件时要注意: **如果出现异常情况会导致整个项目无法正常显示**.
 
 ### 如何占满页面高度
 
@@ -89,4 +89,4 @@ Playground中同样注入了`vue-router`, 需要注意的是, 开发阶段的路
 }
 ```
 
-在页面组件的顶级元素中指定 `flex-grow: 1`即可使元素占满剩余空间. 
+在页面组件的顶级元素中指定 `flex-grow: 1`即可使元素占满剩余空间. 
